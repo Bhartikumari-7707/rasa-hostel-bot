@@ -1,0 +1,313 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <title>Hostel Assistant Chatbot</title>-->
+<!--  <style>-->
+<!--    body {-->
+<!--      font-family: Arial, sans-serif;-->
+<!--      background-color: #e6f0ff;-->
+<!--      display: flex;-->
+<!--      justify-content: center;-->
+<!--      align-items: center;-->
+<!--      height: 100vh;-->
+<!--      margin: 0;-->
+<!--    }-->
+
+<!--    .chat-container {-->
+<!--      width: 600px;-->
+<!--      height: 700px;-->
+<!--      background-color: #ffffff;-->
+<!--      border-radius: 12px;-->
+<!--      box-shadow: 0 0 15px rgba(0, 102, 204, 0.3);-->
+<!--      display: flex;-->
+<!--      flex-direction: column;-->
+<!--      overflow: hidden;-->
+<!--    }-->
+
+<!--    .chat-header {-->
+<!--      background-color: #3399ff;-->
+<!--      padding: 20px;-->
+<!--      color: white;-->
+<!--      text-align: center;-->
+<!--      font-weight: bold;-->
+<!--      font-size: 20px;-->
+<!--    }-->
+
+<!--    .chat-messages {-->
+<!--      flex: 1;-->
+<!--      padding: 20px;-->
+<!--      overflow-y: auto;-->
+<!--      background-color: #f2f9ff;-->
+<!--      font-size: 16px;-->
+<!--      line-height: 1.6;-->
+<!--    }-->
+
+<!--    .chat-input {-->
+<!--      display: flex;-->
+<!--      border-top: 1px solid #ccc;-->
+<!--    }-->
+
+<!--    .chat-input input {-->
+<!--      flex: 1;-->
+<!--      padding: 15px;-->
+<!--      border: none;-->
+<!--      font-size: 16px;-->
+<!--      border-radius: 0 0 0 12px;-->
+<!--      outline: none;-->
+<!--    }-->
+
+<!--    .chat-input button {-->
+<!--      padding: 15px 20px;-->
+<!--      background-color: #3399ff;-->
+<!--      color: white;-->
+<!--      border: none;-->
+<!--      border-radius: 0 0 12px 0;-->
+<!--      font-size: 16px;-->
+<!--      cursor: pointer;-->
+<!--    }-->
+
+<!--    .user-message, .bot-message {-->
+<!--      margin: 10px 0;-->
+<!--      padding: 12px 16px;-->
+<!--      border-radius: 12px;-->
+<!--      max-width: 85%;-->
+<!--      word-wrap: break-word;-->
+<!--    }-->
+
+<!--    .user-message {-->
+<!--      background-color: #d0e6ff;-->
+<!--      align-self: flex-end;-->
+<!--      text-align: right;-->
+<!--      color: #003366;-->
+<!--    }-->
+
+<!--    .bot-message {-->
+<!--      background-color: #e0f0ff;-->
+<!--      align-self: flex-start;-->
+<!--      text-align: left;-->
+<!--      color: #004080;-->
+<!--    }-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--  <div class="chat-container">-->
+<!--    <div class="chat-header">Hostel Assistant 🤖</div>-->
+<!--    <div class="chat-messages" id="chat">-->
+<!--      <div class="bot-message">Hello 👋! I’m your Hostel Assistant Chatbot.<br>May I know your hostel and room number (e.g., QC-03, Room 1B15)?</div>-->
+<!--    </div>-->
+<!--    <div class="chat-input">-->
+<!--      <input type="text" id="user-input" placeholder="Type your message...">-->
+<!--      <button onclick="sendMessage()">Send</button>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <script>-->
+<!--    async function sendMessage() {-->
+<!--      const inputField = document.getElementById("user-input");-->
+<!--      const message = inputField.value.trim();-->
+<!--      if (!message) return;-->
+
+<!--      const chatBox = document.getElementById("chat");-->
+<!--      chatBox.innerHTML += `<div class="user-message">${message}</div>`;-->
+<!--      inputField.value = "";-->
+
+<!--      try {-->
+<!--        const response = await fetch("http://localhost:5005/webhooks/rest/webhook", {-->
+<!--          method: "POST",-->
+<!--          headers: { "Content-Type": "application/json" },-->
+<!--          body: JSON.stringify({-->
+<!--            sender: "user",-->
+<!--            message: message-->
+<!--          })-->
+<!--        });-->
+
+<!--        const data = await response.json();-->
+<!--        if (data.length > 0 && data[0].text) {-->
+<!--          chatBox.innerHTML += `<div class="bot-message">${data[0].text}</div>`;-->
+<!--        } else {-->
+<!--          chatBox.innerHTML += `<div class="bot-message">🤖 Sorry, I didn't understand that.</div>`;-->
+<!--        }-->
+
+<!--      } catch (error) {-->
+<!--        console.error("Error:", error);-->
+<!--        chatBox.innerHTML += `<div class="bot-message">⚠️ Could not reach the bot server.</div>`;-->
+<!--      }-->
+
+<!--      chatBox.scrollTop = chatBox.scrollHeight;-->
+<!--    }-->
+
+<!--    document.getElementById("user-input").addEventListener("keypress", function (e) {-->
+<!--      if (e.key === "Enter") sendMessage();-->
+<!--    });-->
+<!--  </script>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hostel Assistant</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f0ff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .chat-container {
+      width: 100%;
+      max-width: 600px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      border-radius: 0;
+      box-shadow: 0 0 15px rgba(0, 102, 204, 0.3);
+    }
+
+    .chat-header {
+      background-color: #3399ff;
+      padding: 16px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .chat-messages {
+      flex: 1;
+      padding: 16px;
+      overflow-y: auto;
+      background-color: #f2f9ff;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #ccc;
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: 14px;
+      border: none;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .chat-input button {
+      padding: 14px 18px;
+      background-color: #3399ff;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .user-message, .bot-message {
+      margin: 10px 0;
+      padding: 12px 16px;
+      border-radius: 12px;
+      max-width: 85%;
+      word-wrap: break-word;
+    }
+
+    .user-message {
+      background-color: #d0e6ff;
+      align-self: flex-end;
+      text-align: right;
+      color: #003366;
+    }
+
+    .bot-message {
+      background-color: #e0f0ff;
+      align-self: flex-start;
+      text-align: left;
+      color: #004080;
+    }
+
+    @media (max-width: 600px) {
+      .chat-container {
+        border-radius: 0;
+      }
+
+      .chat-header {
+        font-size: 18px;
+        padding: 14px;
+      }
+
+      .chat-input input, .chat-input button {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">Campus Helper 🤖</div>
+    <div class="chat-messages" id="chat">
+      <div class="bot-message">
+        Hello 👋! I’m your Campus Helper Chatbot.<br>
+        May I know your hostel and room number (e.g., QC-03, Room 1B15)?
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const inputField = document.getElementById("user-input");
+      const message = inputField.value.trim();
+      if (!message) return;
+
+      const chatBox = document.getElementById("chat");
+      chatBox.innerHTML += `<div class="user-message">${message}</div>`;
+      inputField.value = "";
+
+      try {
+        const response = await fetch("http://localhost:5005/webhooks/rest/webhook", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            sender: "user",
+            message: message
+          })
+        });
+
+        const data = await response.json();
+        if (data.length > 0) {
+          data.forEach(reply => {
+            chatBox.innerHTML += `<div class="bot-message">${reply.text}</div>`;
+          });
+        } else {
+          chatBox.innerHTML += `<div class="bot-message">🤖 Sorry, I didn't understand that.</div>`;
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        chatBox.innerHTML += `<div class="bot-message">⚠️ Could not reach the bot server.</div>`;
+      }
+
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    document.getElementById("user-input").addEventListener("keypress", function (e) {
+      if (e.key === "Enter") sendMessage();
+    });
+  </script>
+</body>
+</html>
