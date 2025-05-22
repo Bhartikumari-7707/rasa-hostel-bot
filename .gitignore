@@ -1,0 +1,9 @@
+        .rasa/
+        actions/
+        config.yml
+        credentials.yml
+        data/
+        domain.yml
+        endpoints.yml
+        models/
+        tests/
