@@ -1,13 +1,1 @@
-stories.yml
-domain.yml
-nlu.yml
-action.yml
-rules.yml
-config.yml
-endpoints.yml
-test_stories.yml
-        .rasa/
-        actions/
-        credentials.yml
-        models/
-
+action.py
