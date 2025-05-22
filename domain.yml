@@ -1,0 +1,328 @@
+version: "3.1"
+
+intents:
+  - greet
+  - provide_location
+  - provide_name
+  - confirm_issue
+  - deny
+  - describe_issue
+  - want_complaint_form
+  - goodbye
+  - thank_you
+  - out_of_scope
+  - romantic_talk
+  - sorry
+  - health_problem
+  - positive_feedback
+  - negative_feedback
+  - roommate_issue
+  - harassment
+  - complain_ceo
+  - complain_registrar
+  - complain_director
+
+
+
+actions:
+  - action_extract_location
+  - action_extract_name
+  - action_acknowledge_issue
+  - action_send_form_link
+  - action_health_problem
+  - action_provide_health_tips
+#  - utter_goodbye
+#  - utter_harassment
+#  - utter_ask_issue
+#  - utter_greet
+#  - utter_default
+#  - utter_good_day
+#  - utter_thank_you
+#  - utter_out_of_scope
+#  - utter_avoid_romantic
+#  - utter_sorry
+#  - utter_negative_feedback
+#  - utter_positive_feedback
+#  - utter_roommate_solution
+#  - utter_email_director
+#  - utter_email_ceo
+#  - utter_email_registrar
+#  - utter_email_director
+#
+
+entities:
+  - hostel
+  - room
+  - user_name
+  - issue_type
+  - health_issue
+
+
+slots:
+  hostel:
+    type: text
+    mappings:
+      - type: custom
+  room:
+    type: text
+    mappings:
+      - type: custom
+  user_name:
+    type: text
+    mappings:
+      - type: custom
+  issue_type:
+    type: text
+    mappings:
+      - type: custom
+  health_issue:
+    type: text
+    mappings:
+      - type: custom
+
+
+responses:
+  utter_goodbye:
+    - text: "Take care, {user_name}😊.Let me know if you need anything else."
+
+  utter_email_ceo:
+    - text: " The CEO email at kiit.hv@gmail.com for further assistance."
+
+  utter_email_registrar:
+    - text: "The Registrar email at kiit.nvk@gmail.com for further assistance."
+
+  utter_email_director:
+    - text: "The Director email at kiit.ssa@gmail.com for further assistance."
+
+  utter_roommate_solution:
+    - text: "You can understand your roommate.If the problem is out of control then speak to your parents or trust worthy people.Then,you should ask to your Warden."
+
+  utter_positive_feedback:
+    - text: "Thank you for your positive feedback! 😊 Glad I could help."
+
+  utter_negative_feedback:
+    - text: "Sorry to hear that. Your feedback is important, and I'll try to improve. Could you please tell me more?"
+
+  utter_sorry:
+    - text: "No worries at all!"
+
+  utter_avoid_romantic:
+    - text: "I'm here to help with hostel-related issues only 😊. Let's keep our conversation respectful and focused. How can I assist you today?"
+
+  utter_out_of_scope:
+    - text: "I didn't understand.Please rephrase it."
+
+  utter_thank_you:
+    - text: "Pleasure to help! any more issue {user_name}?(yes/no)"
+
+
+  utter_good_day:
+    - text: "Thankyou,have a good day."
+
+  utter_default:
+    - text: "Sorry, I didn’t understand that. Can you please rephrase?"
+
+  utter_greet:
+    - text: "Hello 👋! I’m your Hostel Assistant Chatbot.May I know your hostel and room number (e.g., QC-03, 1B15)?"
+
+
+  utter_ask_issue:
+    - text: "I’m here to help you. Please tell me a bit about the issue you’re facing (e.g.,water,\n electricity,\n maintenance,\n cleanliness,\n food,\n noise,\n security,\n wifi,\n temperature,\n
+               hygiene,\n roommate,\n harassment, and\n what happened with your health ?)"
+
+  utter_harassment:
+    - text: "I'm really sorry you're going through this. If you're feeling harassed or unsafe, please inform your hostel warden or counselor immediately.
+        If the situation continues or is serious, you can register in complaint form 📄and  also email the **CEO**, **Registrar**, or **Director** of the institution directly for help.
+              
+              If you want the complaint form or the email of the concerned person, just ask me."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
+
+
+#version: "3.1"
+#
+#
+#intents:
+#  - positive
+#  - negative
+#  - inform_name
+#  - greet
+#  - inform_issue
+#  - report_water_issue
+#  - report_electricity_issue
+#  - report_maintenance_issue
+#  - report_cleanliness_issue
+#  - report_food_issue
+#  - report_noise_issue
+#  - report_security_issue
+#  - report_wifi_issue
+#  - report_temp_issue
+#  - report_roommate_issue
+#  - report_relationship_issue
+#  - inform_hostel
+#  - inform_hostel_number
+#  - inform_floor
+#  - inform_block
+#  - inform_room_number
+#  - nlu_fallback
+#  - affirm
+#  - goodbye
+#  - thank_you
+#  - positive_feedback
+#  - negative_feedback
+#  - deny
+#  - harassment
+#  - direct_communication
+#
+#actions:
+#  - action_ask_hostel_type
+#  - action_ask_hostel_number
+#  - action_ask_floor
+#  - action_ask_block
+#  - action_ask_room_number
+#  - action_confirm_full_location
+#  - action_reply_after_name
+#  - action_handle_challenge
+#
+#entities:
+#  - hostel
+#  - hostel_number
+#  - floor
+#  - block
+#  - room_number
+#  - item
+#
+#slots:
+#  hostel:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: hostel
+#
+#  hostel_number:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: hostel_number
+#
+#  floor:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: floor
+#
+#  block:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: block
+#
+#  room_number:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: room_number
+#
+#  full_location:
+#    type: text
+#    mappings:
+#      - type: custom  # Set by an action (SlotSet)
+#
+#  item:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: item
+#
+#
+#responses:
+#
+#  utter_for_positive_feedback:
+#    - text: "Thank you so much for your good responses."
+#
+#  utter_for_negative_feedback:
+#    - text: "Thank you so much for your response. I will improve."
+#
+#  utter_default:
+#    - text: "Sorry, I didn't understand that."
+#    - text: "I didn't quite catch that. Could you please provide more details?"
+#
+#  utter_clarify_issue:
+#    - text: "Okay, could you please clarify the issue you're facing?"
+#
+#  utter_greet:
+#    - text: "Hello! Welcome to hostel bot./n Type 'problem' "
+#
+#  utter_goodbye:
+#    - text: "Goodbye! Have a great day!"
+#
+#  utter_ask_issue_type:
+#    - text: "Please tell me what kind of issue you are facing. For example: water\n electricity\n maintenance\n cleanliness\n food\n noise\n security\n wifi\n temperature\n
+#     hygiene\n roommate and\n relationship ?"
+#
+#  utter_water:
+#    - text: "Thanks for reporting the water issue. Please inform the hostel warden first. If the problem continues, contact the hostel administration or your mentor. You can also email the CEO, Director, or Registrar if needed."
+#
+#  utter_electricity:
+#    - text: "We've noted your electricity issue. Kindly inform the warden first. If unresolved, escalate to the hostel office or your mentor. You can also email the CEO, Director, or Registrar."
+#
+#  utter_maintenance:
+#    - text: "Your maintenance issue has been noted. Please report it to the hostel warden. If it persists, reach out to the hostel office or your mentor. For further help, you can also email the CEO, Director, or Registrar."
+#
+#  utter_cleanliness:
+#    - text: "Thanks for reporting the cleanliness issue. Please inform the warden. If it's not solved, talk to the hostel admin or your mentor. You can also contact the CEO, Director, or Registrar via email."
+#
+#  utter_food:
+#    - text: "We’ll check into the food quality issue. Report it to the warden first. If things don’t improve, contact the hostel authorities or mentor. You may also email the CEO, Director, or Registrar."
+#
+#  utter_noise:
+#    - text: "Thanks for raising the noise issue. Let the warden know. If it continues, reach out to the hostel office or your mentor. You can also email the CEO, Director, or Registrar."
+#
+#  utter_security:
+#    - text: "Safety concerns are important. Please tell the warden first. If needed, inform hostel administration or your mentor. You may email the CEO, Director, or Registrar."
+#
+#  utter_wifi:
+#    - text: "Noted the Wi-Fi issue. Inform the warden. If the issue remains, reach out to the hostel office or mentor. You can also email the CEO, Director, or Registrar."
+#
+#  utter_temperature:
+#    - text: "Thank you for sharing the temperature issue. First, inform the warden. If it’s not resolved, contact the hostel administration or your mentor. You may also email the CEO, Director, or Registrar."
+#
+#  utter_direct_communication:
+#  - text: "For direct communication regarding hostel-related issues at University:\nCEO: kiit.hv@gmail.com\nDirector: kiit.ssa@gmail.com\nRegistrar: kiit.nvk@gmail.com\nYou can also register your complaint here: [Grievance Portal](https://kiit.ac.in/grievance/)"
+#
+##  utter_hygiene:
+##    - text: "Thanks for reporting the hygiene issue. It's important to maintain a clean and healthy environment. Please inform the hostel warden about the issue. If it persists, you can reach out to the hostel administration or your mentor for further assistance."
+#
+#
+#  utter_roommate:
+#    - text: "We understand that roommate issues can be challenging. Try to communicate openly, set boundaries, and find a compromise.
+#    If things don't improve, speak to your parents and you can reach out to the hostel administration for further assistance.\n
+#    You can also register your complaint here: [Grievance Portal](https://kiit.ac.in/grievance/)."
+#
+#
+#  utter_relationship:
+#    - text: "I’m sorry to hear about the relationship issue.\nTake a deep breath. Anger and sadness don’t stay forever.
+#    Life keeps moving, and better days will come. Try listening to the song ‘’—it might make you feel a bit better."
+#
+#  utter_harassment:
+#    - text: " Grievance : 24×7 UGC Toll Free Number for registering complaints about sexual harassment : 1800-111-656\n 24×7  Women Helpline Number –
+#      +91 8114380770 and Email : icc.kiit@kiit.ac.in\n Women Helpline Number (National) : 181\n and\n  warmly invites Parents, Students, Staff, and the Public to
+#      share their complaint here: [Grievance Portal](https://kiit.ac.in/grievance/)
+#      and Email: grievance.psp@kiit.ac.in "
+#
+#  utter_thank_you:
+#    - text: "You're welcome! Let me know if you need any further assistance."
+#
+#
+##  utter_deny_response:
+##    - text: "Okay, let me know if you need anything else."
+#
+#session_config:
+#  session_expiration_time: 60
+#  carry_over_slots_to_new_session: true

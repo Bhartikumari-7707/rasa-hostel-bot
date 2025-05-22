@@ -1,0 +1,2242 @@
+version: "3.1"
+
+nlu:
+
+- intent: complain_ceo
+  examples: |
+    - How can I contact the CEO?
+    - Give me the CEO's email address.
+    - I want to email the CEO.
+    - What is the CEO's email?
+    - Can you share the CEO's contact info?
+    - CEO email, please.
+    - Send me the CEO's email.
+    - I need to reach the CEO.
+    - Provide CEO email address.
+    - Contact details for the CEO.
+    - CEO's email ID?
+    - How do I reach the CEO via email?
+    - Email of the CEO, please.
+    - CEO contact info.
+    - I want to complain to the CEO.
+    - Who is the CEO and what is their email?
+    - Give CEO's mail address.
+    - Need to send an email to the CEO.
+    - CEO email contact.
+    - How to email CEO?
+
+- intent: complain_registrar
+  examples: |
+    - How can I contact the Registrar?
+    - Give me the Registrar's email address.
+    - I want to email the Registrar.
+    - What is the Registrar's email?
+    - Can you share the Registrar's contact info?
+    - Registrar email, please.
+    - Send me the Registrar's email.
+    - I need to reach the Registrar.
+    - Provide Registrar email address.
+    - Contact details for the Registrar.
+    - Registrar's email ID?
+    - How do I reach the Registrar via email?
+    - Email of the Registrar, please.
+    - Registrar contact info.
+    - I want to complain to the Registrar.
+    - Who is the Registrar and what is their email?
+    - Give Registrar's mail address.
+    - Need to send an email to the Registrar.
+    - Registrar email contact.
+    - How to email Registrar?
+
+- intent: complain_director
+  examples: |
+    - How can I contact the Director?
+    - Give me the Director's email address.
+    - I want to email the Director.
+    - What is the Director's email?
+    - Can you share the Director's contact info?
+    - Director email, please.
+    - Send me the Director's email.
+    - I need to reach the Director.
+    - Provide Director email address.
+    - Contact details for the Director.
+    - Director's email ID?
+    - How do I reach the Director via email?
+    - Email of the Director, please.
+    - Director contact info.
+    - I want to complain to the Director.
+    - Who is the Director and what is their email?
+    - Give Director's mail address.
+    - Need to send an email to the Director.
+    - Director email contact.
+    - How to email Director?
+
+- intent: roommate_issue
+  examples: |
+      - My roommate is too noisy
+      - My roommate never cleans up after themselves
+      - My roommate keeps playing loud music
+      - My roommate is always late
+      - Roommate doesn’t respect my privacy
+      - My roommate has too many visitors
+      - My roommate leaves their things everywhere
+      - My roommate is very messy
+      - My roommate never does their chores
+      - My roommate always uses my things without asking
+      - My roommate has a bad smell in the room
+      - My roommate doesn’t let me study in peace
+      - Roommate argues with me over small things
+      - My roommate doesn’t follow the rules
+      - My roommate has bad hygiene
+      - My roommate keeps talking on the phone loudly
+      - My roommate stays up late and disturbs me
+      - My roommate eats my food without permission
+      - My roommate always makes a mess in the room
+      - My roommate is never around when needed
+      - My roommate doesn’t pay the rent on time
+      - My roommate is always bringing people over
+      - My roommate is too loud during the night
+      - My roommate is not considerate of others
+      - My roommate leaves the room untidy
+      - My roommate doesn’t help with the cleaning
+      - My roommate uses my bed without permission
+      - My roommate doesn’t respect my sleep time
+      - My roommate leaves dirty dishes in the room
+      - Roommate doesn’t keep their belongings in their area
+      - Roommate never takes out the trash
+      - My roommate is always on their phone
+      - My roommate doesn’t follow the hostel guidelines
+      - My roommate uses my stuff without asking
+      - My roommate is never home on time
+      - Roommate eats loudly
+      - My roommate is constantly late at night
+      - Roommate plays games loudly
+      - My roommate is very inconsiderate
+      - My roommate always plays music in the room
+      - Roommate doesn’t clean their side of the room
+      - My roommate leaves things lying around
+      - My roommate is a heavy sleeper and snores loudly
+      - My roommate has a lot of guests over
+      - My roommate doesn’t respect quiet hours
+      - My roommate eats all my food
+      - My roommate doesn’t respect shared space
+      - My roommate is inconsiderate of others
+      - My roommate always forgets to lock the door
+      - My roommate doesn’t clean the bathroom
+      - My roommate never does their part of the work
+      - Roommate constantly interrupts me
+
+
+- intent: harassment
+  examples: |
+    - Someone is harassing me
+    - I’m being harassed
+    - This person keeps bothering me
+    - I’m not feeling safe because of someone
+    - Someone won’t leave me alone
+    - I’m getting threatening messages
+    - I feel like I’m being stalked
+    - Someone is making me feel uncomfortable
+    - They won’t stop messaging me
+    - I think I’m being followed
+    - This person keeps calling me
+    - I’m scared of what they might do
+    - I want to report someone for harassment
+    - Someone is constantly invading my privacy
+    - I’m receiving unwanted attention
+    - I don’t feel safe around this person
+    - Someone is crossing my boundaries
+    - I need help, someone is bothering me
+    - I feel threatened by someone's behavior
+    - Being harassed
+    - Feeling unsafe
+    - Getting threatening messages
+    - Constantly being bothered
+    - Receiving unwanted attention
+    - Being stalked
+    - Can't stop the messages
+    - Being followed
+    - Repeated calls from unknown number
+    - Feel scared
+    - Want to report harassment
+    - Being invaded
+    - Harassment issue
+    - Threatened
+    - Unsafe here
+    - Too many unwanted messages
+
+
+- intent: positive_feedback
+  examples: |
+    - The service was great
+    - I am happy with the help
+    - Good job!
+    - Thanks for the support
+    - I liked the assistance
+    - Everything was perfect
+    - I appreciate your help
+    - That was very helpful
+    - I am satisfied with this
+    - Great work!
+    - Excellent support!
+    - You did a fantastic job
+    - I am pleased with the assistance
+    - Very helpful, thank you
+    - Perfect solution
+    - I feel grateful for the help
+    - Awesome, thanks a lot
+    - That helped me a lot
+    - Wonderful service
+    - I am impressed
+    - Thanks for your patience
+    - You’re amazing
+    - Keep up the good work
+    - Everything went smoothly
+    - Appreciate your quick response
+    - You made things easy
+    - Very satisfied with your help
+    - Great explanation
+    - Love the support I got
+    - The response was very clear
+    - Thanks for solving my problem
+    - You’re very knowledgeable
+    - Really appreciate your time
+    - That was spot on
+    - You’re the best
+    - Thanks a million
+    - I couldn’t ask for better support
+    - You did well
+    - I’m happy with the outcome
+    - That was quick and efficient
+    - Perfect assistance
+    - Appreciate your help and effort
+    - Thanks for the great service
+    - You handled it well
+    - Excellent help
+    - I’m very happy with your work
+    - You’ve been very supportive
+    - Big thanks to you
+    - You made my day
+    - I’m grateful for your help
+
+- intent: negative_feedback
+  examples: |
+    - I am not happy with the service
+    - The help was bad
+    - I didn’t like the response
+    - This was frustrating
+    - Not satisfied with the assistance
+    - It didn’t solve my problem
+    - Poor support
+    - I am disappointed
+    - That was not helpful
+    - Could be better
+    - Very unsatisfied
+    - The answer was confusing
+    - I expected better help
+    - Not what I wanted
+    - You didn’t solve my issue
+    - I’m still confused
+    - That didn’t work for me
+    - Very bad experience
+    - I’m unhappy with this
+    - The support was slow
+    - No useful information given
+    - It was a waste of time
+    - The response was not clear
+    - You misunderstood my problem
+    - Not happy with your help
+    - This is frustrating me
+    - I need better assistance
+    - That didn’t help at all
+    - Very poor explanation
+    - I’m dissatisfied
+    - The solution was incorrect
+    - You didn’t answer my question
+    - That was disappointing
+    - I feel ignored
+    - I am upset with the service
+    - That was useless
+    - I want a better response
+    - The answer was incomplete
+    - I didn’t get what I needed
+    - You should improve your help
+    - That was the worst response
+    - I am not impressed
+    - I want more detailed help
+    - The support is lacking
+    - That’s not what I asked for
+    - I don’t want to use this again
+    - Very frustrating experience
+    - I want to talk to a human
+    - The service was terrible
+    - I don’t recommend this support
+
+  
+
+- intent: health_problem
+  examples: |
+    - I have a [fever](health_issue)
+    - I am feeling [cold](health_issue)
+    - My [headache](health_issue) is really bad today
+    - I think I caught a [cold](health_issue)
+    - I am experiencing [chills](health_issue)
+    - I have a [runny nose](health_issue)
+    - I am sneezing a lot because of [cold](health_issue)
+    - My [body ache](health_issue) is terrible
+    - I feel very tired and have a [fever](health_issue)
+    - I have a [sore throat](health_issue)
+    - I am coughing and have a [cold](health_issue)
+    - I feel hot and shivery with a [fever](health_issue)
+    - I have a [headache](health_issue) and nausea
+    - I feel weak due to [fever](health_issue)
+    - I am experiencing [dizziness](health_issue)
+    - I am not feeling well; I have a [fever](health_issue)
+    - I have a [chest pain](health_issue)
+    - My [throat is sore](health_issue)
+    - I am shivering and have [cold](health_issue)
+    - I feel congested with a [runny nose](health_issue)
+    - I have a [migraine](health_issue)
+    - I am feeling nauseous and have a [fever](health_issue)
+    - I am sneezing due to [allergy](health_issue)
+    - I have [muscle pain](health_issue)
+    - I am coughing a lot with [cold](health_issue)
+    - I feel fatigued and have a [fever](health_issue)
+    - I am experiencing [shortness of breath](health_issue)
+    - I have a [rash](health_issue)
+    - I feel chills and [cold](health_issue)
+    - I have a [stuffy nose](health_issue)
+    - I have a persistent [cough](health_issue)
+    - I am sweating excessively with a [fever](health_issue)
+    - I have a [toothache](health_issue)
+    - I feel weak and dizzy with a [fever](health_issue)
+    - I have a [sinus infection](health_issue)
+    - I have a [sore throat](health_issue) and fever
+    - I feel cold and shivery
+    - I am experiencing [ear pain](health_issue)
+    - I have a [cold](health_issue) and headache
+    - I feel chills and have a [fever](health_issue)
+    - I have a [stomach ache](health_issue)
+    - I am coughing and sneezing because of [cold](health_issue)
+    - I feel tired and have a [fever](health_issue)
+    - I have a [back pain](health_issue)
+    - I am experiencing [nausea](health_issue)
+    - I have a [cold](health_issue) for three days
+    - I am having difficulty breathing due to [cold](health_issue)
+    - I have a [sore throat](health_issue) and cough
+    - I feel chills and body aches
+    - I have a [fever](health_issue) since last night
+    - I am feeling very tired after taking class whole day
+    - I feel exhausted because of the long classes today
+    - The class was so long, now I feel weak and dizzy
+    - I am tired and my head hurts after attending classes all day
+    - After the whole day of lectures, I have a headache and feel tired
+    - I feel sick and tired after sitting in class all day
+    - Classes all day have made me feel exhausted and feverish
+    - I am really tired and have a sore throat after today's class
+    - Sitting in class the entire day has given me a cold
+    - I feel weak and tired because of back pain from sitting in class all day
+    - I am tired and feeling chills after a long day in class
+    - After class all day, I feel fatigued and have body aches
+    - The long class hours have made me feel dizzy and tired
+    - I feel worn out and have a runny nose after today's classes
+    - I am very tired and have a cough from sitting in class all day
+    - Feeling very tired after the whole day
+    - Exhausted because of long hours
+    - Weak and dizzy now
+    - Head hurts and feeling tired
+    - Headache and tired after all day
+    - Sick and tired from sitting long
+    - Exhausted and feverish today
+    - Really tired with sore throat
+    - Got a cold after sitting long
+    - Weak and tired because of back pain
+    - Tired and feeling chills
+    - Fatigued and body aches after long hours
+    - Dizzy and tired from long sessions
+    - Worn out with a runny nose
+    - Very tired and coughing
+
+
+- intent: sorry
+  examples: |
+    - sorry
+    - I'm sorry
+    - I am sorry
+    - my bad
+    - forgive me
+    - apologies
+    - oops, sorry
+    - I didn't mean to
+    - pardon me
+    - sorry about that
+    - really sorry
+    - I messed up
+    - please forgive me
+    - excuse me
+    - I apologize
+    - so sorry
+    - sorry for that
+    - I am really sorry
+    - I’m truly sorry
+
+- intent: romantic_talk
+  examples: |
+    - I love you
+    - do you love me?
+    - I have feelings for you
+    - you are cute
+    - I like you
+    - can we date?
+    - you’re beautiful
+    - will you marry me?
+    - I miss you
+    - you're so sweet
+    - I want to be with you
+    - you’re my favorite
+    - can I call you babe?
+    - you are my crush
+    - I think I’m falling for you
+    - I dream about you
+    - be my girlfriend
+    - you make me blush
+    - you’re so lovely
+    - you are the love of my life
+    - you're hot
+    - I want to kiss you
+    - are you single?
+    - are you free tonight?
+    - you are my love
+
+- intent: out_of_scope
+  examples: |
+    - nothing
+    - what's your name?
+    - who created you?
+    - tell me a joke
+    - can you dance?
+    - what's the weather today?
+    - play a song
+    - sing for me
+    - what is your age?
+    - are you a robot?
+    - do you believe in God?
+    - how tall are you?
+    - what is 2 + 2?
+    - tell me a story
+    - what time is it?
+    - are you real?
+    - what is your purpose?
+    - what’s trending on Instagram?
+    - how are you?
+    - are you happy?
+    - who is the prime minister?
+    - tell me a fact
+    - give me a movie recommendation
+    - what's on Netflix?
+    - do you know cricket?
+    - who won the match yesterday?
+    - give me your number
+    - can you call me?
+    - send me money
+    - book a cab for me
+    - how to cook biryani?
+    - what’s your favorite color?
+    - open Google
+    - I want to buy a phone
+    - what's your zodiac sign?
+    - make me laugh
+    - write a poem
+    - what's your favorite movie?
+    - translate this to French
+    - solve this equation
+    - who is Elon Musk?
+    - do you have emotions?
+    - I’m bored
+    - what’s your hobby?
+    - tell me about aliens
+    - I like pizza
+    - do you like cats?
+    - teach me how to swim
+    - who is your owner?
+    - what is AI?
+    - explain quantum physics
+    - what’s Bitcoin?
+    - open YouTube
+    - jbvfrf
+    - asdfgh
+    - What???
+    - ????
+    - lkdjfalk
+    - asdkjha!
+    - blabla
+    - random text
+    - play PUBG
+
+- intent: provide_location
+  examples: |
+    - QC-03, Room 1A32
+    - KP-02, Room 2B12
+    - My room is QC-01, Room 1A01
+    - I live in KP-04, Room 3C20
+    - QC-05 Room 2C18
+    - KP-03, Room 1B05
+    - QC-01, Room 3A12
+
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good evening
+    - what's up
+    - hey there
+    - hi there
+    - hello there
+    - good afternoon
+    - greetings
+    - howdy
+    - yo
+    - hiya
+    - hi everyone
+    - hello everyone
+    - hey guys
+    - hey buddy
+    - good day
+    - hi bot
+    - hello bot
+    - hey assistant
+    - hi assistant
+    - hey friend
+    - hello friend
+    - hi friend
+    - hi all
+    - hello all
+    - hey all
+    - good to see you
+    - nice to see you
+    - how are you
+    - how’s it going
+    - how’s everything
+    - long time no see
+    - hey hi
+    - hey there friend
+    - hi there buddy
+    - greetings everyone
+
+
+- intent: provide_name
+  examples: |
+    - Bharati
+    - Arti
+    - Aryan
+    - Ravi
+    - Ankita
+    - Kiran
+    - Neha
+    - Siddharth
+    - Pooja
+    - Rohan
+    - Sneha
+    - Vikram
+    - Aditi
+    - Raj
+    - Meera
+    - Divya Sharma
+    - Sanjay
+    - Maya
+    - Aman
+    - Pankaj
+    - Sonal
+    - Harsh
+    - Alok
+    - Rika
+    - Nisha
+    - Aditya
+    - Reema
+    - Akash
+    - Ritu
+    - Visual
+    - Shreya
+    - Rahul
+    - Deepak
+    - Priya
+    - Anil
+    - Kavita
+    - Sameer
+    - Tina
+    - I am [Aryan Kumar](user_name)
+    - My name is [Ravi](user_name)
+    - It's [Ankita](user_name)
+    - Call me [Kiran](user_name)
+    - You can call me [Siddharth](user_name)
+    - I'm [Pooja](user_name)
+    - This is [Rohan](user_name)
+    - They call me [Sneha](user_name)
+    - My friends call me [Vikram](user_name)
+    - I'm known as [Aditi](user_name)
+    - Just call me [Meera](user_name)
+    - I go by [Manisha](user_name)
+    - People call me [Simian](user_name)
+    - I am called [Kuna](user_name)
+    - My full name is [Divya Sharma](user_name)
+
+
+
+- intent: confirm_issue
+  examples: |
+    - yes
+    - Yes
+    - yeah
+    - y
+    - yup
+
+- intent: deny
+  examples: |
+    - no
+    - not really
+    - nope
+    
+- intent: describe_issue
+  examples: |
+    - water
+    - electricity
+    - maintenance
+    - cleanliness
+    - food
+    - noise
+    - security
+    - wifi
+    - temperature
+    - hygiene
+    - I am facing a water issue
+    - There is no electricity
+    - Maintenance problem
+    - It's not clean here
+    - Food is bad
+    - Too much noise at night
+    - I don’t feel safe, security issue
+    - Wifi is not working
+    - It’s too hot in the room
+    - Hygiene level is poor
+    - Problem with hygiene
+    - No water supply
+    - Fan is not working
+    - The lights are flickering
+    - Water tap is leaking
+    - The bathroom is dirty
+    - The food quality is poor
+    - Loud parties keep happening
+    - Security guard is not present
+    - Wifi connection drops frequently
+    - Room temperature is very low
+    - The floor is not cleaned properly
+    - No hot water in the shower
+    - Electricity cuts off frequently
+    - Maintenance staff is slow
+    - Garbage is not collected
+    - The toilet is clogged
+    - Food portions are small
+    - Noise from construction nearby
+    - Security cameras are broken
+    - Wifi speed is very slow
+    - Room gets too cold at night
+    - Dirty bedsheets
+    - I feel unsafe at night
+    - Water pressure is low
+    - The fan makes a loud noise
+    - Electricity bills are too high
+    - Problems with kitchen cleanliness
+    - Food is sometimes spoiled
+    - Too much noise during exams
+    - Security lights are off
+    - Wifi is disconnected often
+    - The heater is not working
+    - Rooms are not ventilated properly
+    - The room smells bad
+    - The bathroom floor is slippery
+    - Lights are too dim
+    - The door lock is broken
+    - Trash bins are overflowing
+    - The water heater is not working
+    - The sink is clogged
+    - The window is broken
+    - The elevator is out of service
+    - Parking area is unsafe
+    - The lawn is not maintained
+    - Broken furniture in the room
+    - The AC is leaking water
+    - The heater doesn’t turn on
+    - The power socket is damaged
+    - The shower pressure is weak
+    - The WiFi password is not working
+    - I can’t connect to the internet
+    - The garbage disposal is smelly
+    - Noise from nearby traffic
+    - The smoke detector is beeping
+    - The fire extinguisher is missing
+    - The intercom is not working
+    - The staircase light is off
+
+- intent: want_complaint_form
+  examples: |
+    - want
+    - I want the form
+    - send me the form
+    - please send the complaint form
+    - share the form
+    - I need the complaint form
+    - give me the link
+    - Can you send me the complaint form?
+    - Please share the complaint form link
+    - I would like the complaint form
+    - Could you provide the complaint form?
+    - Send the complaint form to me
+    - I want to file a complaint, send form
+    - How can I get the complaint form?
+    - I need to fill the complaint form
+    - Provide the complaint form link
+    - Can I get the complaint form?
+    - Please send the form for complaints
+    - I require the complaint form
+    - Give me the complaint form
+    - Where is the complaint form?
+    - Share complaint form, please
+    - I want to lodge a complaint, send form
+    - Need complaint form link
+    - Complaint form, please
+    - Help me get the complaint form
+    - I want to report an issue, send form
+    - Please send me the complaint form link
+    - I want complaint form link
+    - Can you share the complaint form?
+    - Please provide the form to complain
+    - Send me complaint form link
+    - I want the complaint form link
+    - I need complaint form asap
+    - I would like to get complaint form
+    - Complaint form needed
+    - I want to download the complaint form
+    - Share the link for complaint form
+    - Please send complaint registration form
+    - Complaint form required
+    - Please share the complaint link.
+    - I want to file a complaint.
+    - How do I submit a complaint?
+    - Where is the complaint form?
+    - Give me the complaint form link.
+    - Share the complaint submission link.
+    - I need to complain about something.
+    - Complaint form, please.
+    - How can I fill out a complaint?
+    - Complaint registration link?
+    - Link to the complaint form.
+    - Please provide the complaint form.
+    - Where can I lodge a complaint?
+    - I want to report an issue.
+    - Complaint portal link?
+    - How do I make a complaint?
+    - Send me the complaint form.
+    - Complaint submission form?
+    - Complaint form URL, please.
+    - I want to raise a complaint.
+    - How to file a complaint online?
+    - Provide complaint link.
+    - Is there a complaint form?
+    - I want to complain formally.
+    - Complaint form for hostel issues.
+    - Link to register a complaint.
+    - Complaint registration form link.
+    - Complaint process link?
+    - How do I send a complaint?
+    - Where is the complaint link?
+    - Complaint form for harassment.
+    - Complaint link for maintenance issues.
+    - Give me the link to file a complaint.
+    - Complaint form to fill.
+    - Complaint form to submit.
+    - How to file complaint for water issues?
+    - Complaint form for electricity problems.
+    - Complaint registration portal link.
+    - Complaint link for student issues.
+    - Link to complaint form for mess problems.
+    - Complaint form for room issues.
+    - Complaint form for hostel safety.
+    - I want to complain about hostel problems.
+    - Complaint form access link.
+    - Please give complaint form link.
+    - Complaint submission URL.
+    - Complaint link for reporting problems.
+- intent: thank_you
+  examples: |
+    - thank you
+    - thanks
+    - thanks a lot
+    - thank you so much
+    - many thanks
+    - thanks a ton
+    - thanks a bunch
+    - thank you very much
+    - much appreciated
+    - thanks for your help
+    - thank you for your assistance
+    - thanks a million
+    - I appreciate it
+    - grateful, thanks
+    - thanks for everything
+    - thank you kindly
+    - thanks, I appreciate it
+    - thanks for your support
+    - thanks again
+    - thank you very kindly
+
+
+- intent: goodbye
+  examples: |
+    - bye
+    - see you
+    - see you later
+    - goodbye
+    - talk to you later
+    - catch you later
+    - have a nice day
+    - take care
+    - see ya
+    - bye bye
+    - farewell
+    - later
+    - I'm off
+    - got to go
+    - see you soon
+    - until next time
+    - have a good one
+    - peace out
+
+
+
+#version: "3.1"
+#nlu:
+#  - intent: greet
+#    examples: |
+#      - Hello
+#      - Hi
+#      - Hey there
+#      - Good morning
+#      - Good afternoon
+#      - Good evening
+#      - How are you?
+#      - What's up?
+#      - Hi there!
+#      - Howdy
+#      - Yo
+#      - Greetings
+#      - Hey
+#      - What's good?
+#      - What's happening?
+#      - How’s it going?
+#      - Hello there!
+#      - What's up, bot?
+#      - Sup?
+#      - How’s everything?
+#      - Good to see you
+#      - How’s life?
+#      - What’s new?
+#      - How’s your day going?
+#      - Greetings to you
+#      - Hi, how are you doing today?
+#      - What's up today?
+#      - Nice to meet you
+#      - Hi, bot!
+#      - How's the day been?
+#      - It's a great day!
+#      - Hey, I need some help
+#      - How's the weather today?
+#      - Yo, what's going on?
+#      - Hi, I have some questions
+#      - Hello, how can I help?
+#      - How have you been?
+#      - Long time no see
+#      - Hi! How are things?
+#      - Hope you're doing well
+#      - It's nice to meet you
+#      - How can you help me today?
+#      - Let's talk
+#      - Hi, I need some assistance
+#      - Good to chat with you!
+#      - Hey, can we talk?
+#      - Hi! I need information
+#      - Hey there, how can I assist?
+#
+#  - intent: goodbye
+#    examples: |
+#      - Goodbye
+#      - Bye
+#      - See you later
+#      - Farewell
+#      - Have a great day!
+#      - Take care
+#      - Catch you later
+#      - Talk to you later
+#      - I'm off now
+#      - I'm leaving
+#      - See you soon
+#      - Until next time
+#      - Bye bye
+#      - I'm going now
+#      - Take care, see you soon
+#      - I'll be back later
+#      - I'm out
+#      - Later
+#      - I'm off
+#      - Have a nice day
+#      - So long
+#      - Bye for now
+#      - It's time for me to go
+#      - I'm signing off now
+#      - Peace out
+#      - I need to go now
+#      - Talk soon
+#      - Enjoy the rest of your day
+#      - Have a good one
+#      - Goodbye for now
+#      - I'm done for today
+#      - Have a pleasant day ahead
+#      - Bye for now, take care
+#      - Catch you on the flip side
+#      - I'm going to head out now
+#      - I’m signing out
+#      - Hope to talk to you again soon
+#      - I’m heading off now
+#      - See you later, alligator
+#      - Adios
+#      - Stay safe
+#      - Take care of yourself
+#      - See you around
+#      - Be safe
+#      - Take care, bye!
+#      - Time to go, see you!
+#
+#  - intent: inform_issue
+#    examples: |
+#      - I want to report an issue
+#      - There’s an issue I need to report
+#      - I need help with an issue
+#      - Can you assist me with an issue?
+#      - I have a complaint
+#      - There’s something wrong I need to report
+#      - I need to let you know about an issue
+#      - There’s a problem I’d like to report
+#      - Can you help me with an issue I’m facing?
+#      - There’s something wrong that needs attention
+#      - I have an issue to report
+#      - Something is wrong, can I report it?
+#      - I need to raise an issue
+#      - I need to tell you about a problem
+#      - Can I file a report for an issue?
+#      - I need to report a problem
+#      - I want to raise an issue
+#      - I need to bring something to your attention
+#      - There's something that needs to be addressed
+#      - There’s an issue that requires reporting
+#      - I want to file a complaint
+#      - I’d like to report a problem
+#      - Please listen to my issue
+#      - I have a problem to report
+#      - There’s a situation that I need to report
+#      - Something’s wrong and I need to report it
+#      - Can you help me report this problem?
+#      - I need assistance reporting an issue
+#      - I want to make a complaint
+#      - Something’s wrong, I need to report it
+#      - I’m facing an issue that needs reporting
+#      - I need to speak to someone about a problem
+#      - I want to report something urgent
+#      - There’s a situation to report
+#      - I’d like to let you know about something
+#      - Can you help me with an issue I’m having?
+#      - I’d like to speak about a problem
+#      - Something needs reporting
+#      - Can I file a complaint about this?
+#      - I need to inform you about an issue
+#      - I have a serious problem to report
+#      - Can I report an issue right now?
+#      - I need your help with something I’m facing
+#      - There's an issue that needs solving
+#      - Something happened that I need to report
+#      - Can you take care of a problem for me?
+#      - I have a situation that needs attention
+#
+#  - intent: report_water_issue
+#    examples: |
+#      - There's no water in my hostel
+#      - The water supply is cut off
+#      - We’re facing water issues in our hostel
+#      - The taps aren’t working
+#      - There's no water in my room
+#      - The water flow is low
+#      - Water is not coming through the pipes
+#      - The water pressure is very low
+#      - I can’t get water in my hostel
+#      - There’s no water in the washrooms
+#      - The water supply is inconsistent
+#      - The taps in the hostel are broken
+#      - I can’t use the washroom due to water shortage
+#      - Water is not available in my room
+#      - The water system isn’t working properly
+#      - There’s a water issue in the building
+#      - Water is leaking from the pipes
+#      - There’s a blockage in the water pipe
+#      - The water is not flowing correctly
+#      - The water is very dirty
+#      - The water tank is empty
+#      - I think the water pipes are broken
+#      - The shower is not working
+#      - The water tank is leaking
+#      - There is no drinking water in the hostel
+#      - Water has stopped flowing in our area
+#      - The water filter is not working
+#      - I need water supply urgently
+#      - There’s a leak in the water pipe
+#      - My bathroom has no water
+#      - The water supply is down
+#      - The water isn’t reaching my room
+#      - We are facing a water shortage problem
+#      - The water flow is irregular
+#      - There’s no hot water in my room
+#      - The pipes are making weird sounds
+#      - There’s a water-related issue
+#      - The water meter isn’t working properly
+#      - Water in the hostel is always dirty
+#      - Water is being wasted in my hostel
+#      - The water tank seems to be empty
+#      - The water heater is not working
+#      - I can’t find the water pump in my building
+#      - There’s no water for cleaning purposes
+#      - I think the water pipes have been blocked
+#      - There’s a water-related emergency
+#      - The water is discolored
+#      - My washroom has water issues
+#      - The water supply is irregular in our block
+#      - We need water urgently in our hostel
+#
+#
+#
+#  - intent: report_electricity_issue
+#    examples: |
+#      - The electricity is out in my room
+#      - There's a power cut in the hostel
+#      - The lights are not working in my room
+#      - The electricity has gone off
+#      - We don't have electricity in our block
+#      - The electricity is flickering
+#      - There's no power in the washroom
+#      - The electrical outlets aren’t working
+#      - We have frequent power cuts
+#      - The electricity is down in my hostel
+#      - There's no electricity in the building
+#      - The electricity bill isn’t being paid
+#      - The power is cutting off constantly
+#      - The lights are out in the corridor
+#      - The electricity is going off intermittently
+#      - The power supply is fluctuating
+#      - There’s no power supply in the building
+#      - The electricity is not working properly
+#      - My electrical appliances are not working
+#      - There’s an electrical failure in the building
+#      - The main power switch is broken
+#      - There’s a problem with the electricity circuit
+#      - We have no backup generator
+#      - The power is unstable
+#      - There’s a short circuit in my room
+#      - I’ve lost power in my area
+#      - The electricity isn’t coming back
+#      - The electricity keeps going out
+#      - The light bulbs are malfunctioning
+#      - I have no power in my block
+#      - The power is not restored after the outage
+#      - The backup generator isn’t working
+#      - The electrical system is faulty
+#      - I can’t get any electricity
+#      - There’s no electricity in the common areas
+#      - The electricity in my block is shut off
+#      - We need someone to fix the electricity issue
+#      - The room is too dark, need the electricity fixed
+#      - Power is down across the whole building
+#      - I think there’s a problem with the main electricity panel
+#
+#  - intent: report_maintenance_issue
+#    examples: |
+#      - The toilet is broken
+#      - The door handle is not working
+#      - My sink is leaking
+#      - There’s a broken pipe in the bathroom
+#      - The air conditioner isn’t working
+#      - The window in my room won’t close
+#      - The fan is broken
+#      - There’s a hole in the wall
+#      - The flush isn’t working in my washroom
+#      - My bed is damaged
+#      - The walls are cracked
+#      - The electrical sockets aren’t working
+#      - The water heater is broken
+#      - The door is not closing properly
+#      - My bed frame is broken
+#      - The wardrobe is falling apart
+#      - The windows don’t lock
+#      - The shower is leaking
+#      - There’s a crack in the floor
+#      - The faucet is not working
+#      - My wardrobe door is off the hinges
+#      - The roof is leaking
+#      - The bathroom mirror is cracked
+#      - The windows are stuck
+#      - The floor tiles are cracked
+#      - The lighting fixtures are broken
+#      - My drawer is broken
+#      - The doorbell isn’t working
+#      - There’s no hot water in the shower
+#      - The fridge is not cooling
+#      - The exhaust fan isn’t working
+#      - The lock on the door is faulty
+#      - The paint is peeling off the wall
+#      - The curtain rods are broken
+#      - The cupboard door is broken
+#      - The floor is uneven
+#      - The closet door doesn’t shut
+#      - The hot water pipe is leaking
+#      - The heater is not working
+#      - The air conditioning unit is leaking
+#      - The walls are damp
+#      - There’s a termite issue in my room
+#      - The window screen is torn
+#      - The ceiling fan is making noise
+#      - The door handle is loose
+#      - The bathroom tiles are falling off
+#      - The balcony railing is loose
+#      - The balcony door is stuck
+#
+#  - intent: report_cleanliness_issue
+#    examples: |
+#      - The washrooms are dirty
+#      - The kitchen is unclean
+#      - There’s garbage in the corridor
+#      - The common area is filthy
+#      - The floors are not cleaned properly
+#      - There’s dust on the furniture
+#      - My room is not cleaned
+#      - The kitchen counter is dirty
+#      - The bathroom floors are slippery
+#      - The toilets are not cleaned regularly
+#      - There’s rubbish in the parking area
+#      - The walls are stained
+#      - The stairways are dirty
+#      - There’s mold in the bathroom
+#      - The dining area needs cleaning
+#      - The floor in the common area is sticky
+#      - The windows are dusty
+#      - There’s hair in the shower
+#      - The trash bins are overflowing
+#      - The washbasin is dirty
+#      - The room needs dusting
+#      - The floors in the corridor are not swept
+#      - The fridge is dirty
+#      - The kitchen shelves are greasy
+#      - The laundry room needs to be cleaned
+#      - The toilets are clogged
+#      - There’s too much dust in the room
+#      - The garbage bin is not emptied
+#      - The room hasn’t been cleaned in days
+#      - The washing machine is dirty
+#      - The corridors are smelly
+#      - The bathroom mirrors are dirty
+#      - The floor tiles in the kitchen are greasy
+#      - The bed sheets are stained
+#      - There’s mold on the walls
+#      - The room is very dusty
+#      - The kitchen sink is full of dirty dishes
+#      - The floor mats are dirty
+#      - The bathroom smells bad
+#      - The carpets need to be vacuumed
+#      - The kitchen cupboards are dusty
+#      - The beds aren’t made
+#      - The toilet paper is missing
+#      - The mirrors in the hostel need cleaning
+#      - The showers are not cleaned properly
+#      - The air smells musty in the room
+#      - The toilets are clogged with hair
+#      - The floors are sticky in the kitchen
+#
+#  - intent: report_food_issue
+#    examples: |
+#      - The food quality is bad
+#      - The food is undercooked
+#      - I don’t like the taste of the food
+#      - There is too much salt in the food
+#      - The food is too spicy
+#      - The food is cold
+#      - The food is stale
+#      - The food portions are too small
+#      - The food is burnt
+#      - The rice is overcooked
+#      - The vegetables are raw
+#      - The meat is not fresh
+#      - The food smells bad
+#      - The breakfast served was not fresh
+#      - The food service is slow
+#      - The kitchen smells bad
+#      - There is no variety in the food
+#      - The food is too oily
+#      - The soup is too salty
+#      - The food is tasteless
+#      - The food is too bland
+#      - I found hair in my food
+#      - The food is not nutritious
+#      - The food is not hygienic
+#      - The salad is not fresh
+#      - The snacks are stale
+#      - The bread is too hard
+#      - There’s no vegetarian option
+#      - The food is not fresh every day
+#      - The food containers are dirty
+#      - The food tastes like it’s reheated
+#      - The rice is sticky
+#      - The food portions are inconsistent
+#      - The bread is burnt
+#      - The food service doesn’t offer much choice
+#      - The soup is lukewarm
+#      - The food is served late
+#      - The desserts are too sweet
+#      - The food is overcooked
+#      - The food has too much oil
+#      - There’s not enough seasoning in the food
+#      - The vegetables are soggy
+#      - The dishes are not cleaned after use
+#      - The food is unappetizing
+#      - The food smells unpleasant
+#      - There’s no option for people with allergies
+#      - The food tastes like it’s from last night
+#      - The food is not made with fresh ingredients
+#      - There’s too much grease in the food
+#      - The food is too bland, needs more flavor
+#      - The food is very heavy to digest
+#
+#  - intent: report_noise_issue
+#    examples: |
+#      - The noise from the neighbors is disturbing
+#      - It’s too noisy in the corridor
+#      - There’s loud music coming from next door
+#      - The walls are too thin, I can hear everything
+#      - There’s construction noise near the hostel
+#      - I can hear shouting from outside
+#      - The noise from the street is loud at night
+#      - The fan is making too much noise
+#      - The elevator is very loud
+#      - I can hear people talking loudly from the next room
+#      - There’s a lot of noise in the common area
+#      - The noise outside my room is disturbing
+#      - I hear someone playing loud music
+#      - The noise is preventing me from studying
+#      - I can’t sleep because of the noise
+#      - There’s noise from the ventilation system
+#      - The noise level in the hostel is very high
+#      - The neighbors are arguing loudly
+#      - There’s constant noise from the outside
+#      - The hostel mate are making too much noise late at night
+#      - The construction workers are too noisy
+#      - The loudspeaker outside is disturbing me
+#      - The music in the hall is too loud
+#      - The constant shouting is bothering me
+#      - The noise from the air conditioning is loud
+#      - The music in the common area is too loud
+#      - The noise at night is preventing me from studying
+#      - The constant clattering from the kitchen is disturbing
+#      - I can hear the elevator at all hours
+#      - There’s too much noise in the parking lot
+#      - The sound from the rooms next door is very clear
+#      - The outside noise makes it hard to focus
+#      - The music from the building next door is very loud
+#      - The street traffic is too loud at night
+#      - The cleaning staff is too noisy in the morning
+#
+#  - intent: report_security_issue
+#    examples: |
+#      - The main gate was left open after hours
+#      - The security guard isn’t around at night
+#      - There’s no one at the security post
+#      - The security camera isn’t working
+#      - The gate was unlocked all night
+#      - There’s no security guard at the hostel
+#      - The security guard isn’t doing their job
+#      - Someone tried to break into the hostel
+#      - There’s been a theft in the hostel
+#      - The gate was open when I arrived late
+#      - The hostel has no proper security system
+#      - The security guard is not checking IDs properly
+#      - Someone was spotted on the property without permission
+#      - The hostel entrance is not properly secured
+#      - The security system isn’t working properly
+#      - The hostel doesn’t have enough security
+#      - The security guard is sleeping on duty
+#      - I can’t find the security guard
+#      - There’s no one manning the security desk
+#      - The alarm system is broken
+#      - The hostel doesn’t have proper emergency exits
+#      - The security staff is not available at night
+#      - The security staff is not alert enough
+#      - The gate is broken and can’t be locked
+#      - Someone was wandering around the hostel
+#      - The hostel has no cameras in the common areas
+#      - The security guard left their post unattended
+#      - The security personnel don’t check for IDs
+#      - The security system isn’t working at night
+#      - I don’t feel safe because the security is not adequate
+#      - The main entrance is always left open
+#      - The security staff isn’t monitoring the building
+#      - The hostel has no proper lighting at night
+#      - There’s no secure way to enter the building
+#      - The security camera footage is not being monitored
+#      - The hostel entrance has no guards at night
+#      - The security staff is not responsive
+#      - The hostel is not safe at night
+#
+#
+#  - intent: report_wifi_issue
+#    examples: |
+#      - The WiFi isn’t working
+#      - The WiFi is too slow
+#      - I can’t connect to the WiFi
+#      - The WiFi signal is weak
+#      - The WiFi keeps disconnecting
+#      - I don’t have internet access
+#      - The WiFi is not available in my room
+#      - The WiFi isn’t working in the common area
+#      - The WiFi keeps buffering
+#      - The internet speed is very slow
+#      - The WiFi isn’t turning on
+#      - The WiFi network is not showing up
+#      - The WiFi password is not working
+#      - The internet connection is not stable
+#      - I can’t log into the WiFi
+#      - The WiFi connection is dropping
+#      - The WiFi is very intermittent
+#      - The WiFi is always down
+#      - The WiFi doesn’t reach my room
+#      - The internet is not connecting
+#      - The WiFi keeps cutting off
+#      - There’s no WiFi signal in my area
+#      - The WiFi is too weak in my room
+#      - The WiFi stops working after a while
+#      - The internet speed is too slow to work
+#      - I’m having trouble connecting to the WiFi
+#      - The WiFi is down in the hostel
+#      - The internet is not working at all
+#      - The WiFi isn’t showing up on my device
+#      - The WiFi keeps disconnecting in my room
+#      - The internet isn’t connecting at all
+#      - The WiFi is extremely slow
+#      - I can’t access the internet from my room
+#      - The WiFi is unstable
+#      - The connection is very poor
+#      - I can’t even load a webpage
+#      - The WiFi is always crashing
+#      - The WiFi is down for maintenance
+#      - The internet keeps buffering
+#      - I have no internet connection
+#      - The WiFi is very patchy
+#      - The WiFi doesn’t work on my laptop
+#      - The WiFi is not connecting to my phone
+#      - The WiFi router needs fixing
+#      - The WiFi needs to be reset
+#      - The WiFi isn’t working in the kitchen
+#      - The WiFi is too weak in the hallway
+#      - The WiFi connection is too slow to stream
+#      - The WiFi isn’t available in my hostel
+#      - The WiFi speed is too low for video calls
+#
+#  - intent: report_temp_issue
+#    examples: |
+#      - The room temperature is too hot
+#      - It’s too cold in my room
+#      - The air conditioner is not working
+#      - The heating system is not working
+#      - My room is too warm
+#      - The AC is making the room too cold
+#      - The room temperature is not comfortable
+#      - The fan isn’t cooling the room
+#      - The heater is not working properly
+#      - The air conditioning is too noisy
+#      - The room is freezing at night
+#      - The air conditioning is set too low
+#      - The room gets too hot during the day
+#      - The temperature in my room is inconsistent
+#      - The room temperature is hard to regulate
+#      - The heating system is faulty
+#      - The temperature in my room is too high
+#      - The air conditioning isn’t working properly
+#      - I can’t get the temperature right in my room
+#      - The room is too cold at night
+#      - I feel suffocated in my room
+#      - The heater is too strong
+#      - I can’t adjust the room temperature
+#      - The AC is not cool enough
+#      - The temperature keeps fluctuating
+#      - It’s too hot in the common areas
+#      - The air conditioning is not reaching my room
+#      - I can’t sleep because of the temperature
+#
+#  - intent: report_roommate_issue
+#    examples: |
+#      - My roommate is too noisy
+#      - My roommate never cleans up after themselves
+#      - My roommate keeps playing loud music
+#      - My roommate is always late
+#      - Roommate doesn’t respect my privacy
+#      - My roommate has too many visitors
+#      - My roommate leaves their things everywhere
+#      - My roommate is very messy
+#      - My roommate never does their chores
+#      - My roommate always uses my things without asking
+#      - My roommate has a bad smell in the room
+#      - My roommate doesn’t let me study in peace
+#      - Roommate argues with me over small things
+#      - My roommate doesn’t follow the rules
+#      - My roommate has bad hygiene
+#      - My roommate keeps talking on the phone loudly
+#      - My roommate stays up late and disturbs me
+#      - My roommate eats my food without permission
+#      - My roommate always makes a mess in the room
+#      - My roommate is never around when needed
+#      - My roommate doesn’t pay the rent on time
+#      - My roommate is always bringing people over
+#      - My roommate is too loud during the night
+#      - My roommate is not considerate of others
+#      - My roommate leaves the room untidy
+#      - My roommate doesn’t help with the cleaning
+#      - My roommate uses my bed without permission
+#      - My roommate doesn’t respect my sleep time
+#      - My roommate leaves dirty dishes in the room
+#      - My roommate doesn’t keep their belongings in their area
+#      - Roommate never takes out the trash
+#      - My roommate is always on their phone
+#      - My roommate doesn’t follow the hostel guidelines
+#      - My roommate uses my stuff without asking
+#      - My roommate is never home on time
+#      - Roommate eats loudly
+#      - My roommate is constantly late at night
+#      - Roommate plays games loudly
+#      - My roommate is very inconsiderate
+#      - My roommate always plays music in the room
+#      - Roommate doesn’t clean their side of the room
+#      - My roommate leaves things lying around
+#      - My roommate is a heavy sleeper and snores loudly
+#      - My roommate has a lot of guests over
+#      - My roommate doesn’t respect quiet hours
+#      - My roommate eats all my food
+#      - My roommate doesn’t respect shared space
+#      - My roommate is inconsiderate of others
+#      - My roommate always forgets to lock the door
+#      - My roommate doesn’t clean the bathroom
+#      - My roommate never does their part of the work
+#      - Roommate constantly interrupts me
+#
+#  - intent: thank_you
+#    examples: |
+#      - Thank you for your help
+#      - Thanks a lot
+#      - I appreciate it
+#      - Thank you for your support
+#      - Thanks for the assistance
+#      - I’m grateful
+#      - Thank you so much
+#      - I really appreciate your help
+#      - Thank you for understanding
+#      - Thanks for helping me out
+#      - Thank you for everything
+#      - I appreciate your time
+#      - Thanks for your patience
+#      - I’m really grateful
+#      - Thank you for your response
+#      - Thanks for the quick reply
+#      - Thank you for being there
+#      - Thanks for your cooperation
+#      - I appreciate your effort
+#      - Thanks for your attention
+#      - Thank you for listening
+#      - Thanks for the information
+#      - Thanks for being helpful
+#      - I appreciate the feedback
+#      - Thanks a lot for your support
+#      - Thank you so much for your time
+#      - Thanks for assisting me
+#      - Thanks for the wonderful help
+#      - I appreciate your kindness
+#      - Thanks for answering my questions
+#      - Thank you, I’m glad to hear that
+#      - Thanks for the clarification
+#      - I really appreciate it
+#      - I’m thankful for your support
+#      - Thanks a lot for your assistance
+#      - I’m very thankful
+#      - Thank you for considering this
+#      - I’m really thankful for the help
+#      - Thanks for the prompt reply
+#      - Thanks for your quick response
+#      - Thank you for your kind words
+#      - I’m truly grateful
+#      - Thanks for being so understanding
+#      - Thank you, I feel much better
+#      - Thank you for your great service
+#      - I really appreciate your promptness
+#      - Thanks for being so helpful
+#      - Thank you, that really helped
+#      - Thanks for always being there for me
+#
+#  - intent: report_relationship_issue
+#    examples: |
+#      - My girlfriend and I had a small argument
+#      - I had a disagreement with my boyfriend
+#      - My partner is ignoring me
+#      - My girlfriend keeps getting upset over small things
+#      - I think my boyfriend is avoiding me
+#      - My partner didn’t listen to me today
+#      - My girlfriend is upset with me for no reason
+#      - My boyfriend is being distant
+#      - My partner doesn’t talk to me about my feelings
+#      - We had a fight over something trivial
+#      - My girlfriend always misunderstands me
+#      - My boyfriend is upset but won’t tell me why
+#      - We are having communication problems
+#      - My partner is not understanding me lately
+#      - We had a fight about something insignificant
+#      - My boyfriend is not spending enough time with me
+#      - My girlfriend doesn’t seem to care anymore
+#      - I feel like my boyfriend is taking me for granted
+#      - My girlfriend is upset because I didn’t text her enough
+#      - My boyfriend is being rude lately
+#      - My partner is always angry with me
+#      - We had a disagreement over something stupid
+#      - My girlfriend thinks I don’t care about her
+#      - My boyfriend keeps ignoring me
+#      - I’m not sure what’s wrong with my relationship
+#      - My partner is upset but won’t tell me why
+#      - We can’t seem to get along recently
+#      - My girlfriend doesn’t want to talk to me
+#      - I don’t feel like my boyfriend understands me
+#      - My partner is being very moody
+#      - We had a small fight about spending time together
+#      - My girlfriend is mad at me for something I didn’t do
+#      - I feel like my boyfriend is not as affectionate anymore
+#      - My girlfriend is upset about something I did last week
+#      - My boyfriend is not supportive lately
+#      - I can’t seem to make my girlfriend happy
+#      - We keep arguing about the same things
+#      - My partner doesn’t communicate well with me
+#      - My girlfriend is upset because I didn’t give her enough attention
+#      - I feel like my boyfriend is prioritizing other things over me
+#      - My girlfriend wants more of my time but I’m busy
+#      - My boyfriend is angry about something that happened weeks ago
+#      - We can’t seem to agree on anything lately
+#      - My girlfriend keeps bringing up past mistakes
+#      - I don’t feel emotionally connected to my boyfriend right now
+#      - My partner keeps shutting me out
+#      - We’re not on the same page about our future
+#
+#  - intent: positive_feedback
+#    examples: |
+#      - yup
+#      - absolutely
+#      - of course
+#      - definitely
+#      - Yes
+#      - You’re doing great!
+#      - This bot is really helpful
+#      - I’m impressed with your responses
+#      - You’ve been so useful, thank you!
+#      - You’re answering all my questions so well
+#      - This chatbot is amazing!
+#      - You make everything so easy to understand
+#      - You’re very efficient at helping me
+#      - I love how quickly you respond
+#      - Your responses are really clear
+#      - Thanks for your help, you’re awesome!
+#      - You’re very good at this
+#      - This is exactly what I needed
+#      - I appreciate the quick answers
+#      - I’m happy with your service
+#      - This is such a great chatbot
+#      - Your help is much appreciated
+#      - You made this so much easier
+#      - Thanks for making things simpler
+#      - I’m impressed with how fast you are
+#      - You’ve been a big help, thanks!
+#      - I’m really satisfied with your help
+#      - You answered all my queries perfectly
+#      - This is the best chatbot I’ve used
+#      - I’m so glad I found this chatbot
+#      - You’re very helpful, thanks!
+#      - Your responses are so on point
+#      - This is exactly what I was looking for
+#      - You’re doing a fantastic job
+#      - I feel much better now, thanks to you
+#      - Great job, keep it up!
+#      - You are very knowledgeable
+#      - I can count on you for the answers
+#      - You’ve helped me a lot today
+#      - Your answers are really insightful
+#      - I’m impressed with your speed
+#      - You made it so easy to get the information I needed
+#      - This bot is super efficient
+#      - You’re really easy to talk to
+#      - You’re a life-saver!
+#      - You’ve made my day much easier
+#      - Thanks for your incredible assistance
+#      - You’re a great resource!
+#      - I really appreciate how helpful you’ve been
+#      - This chatbot is really impressive
+#      - Your answers are spot on
+#      - I really appreciate how quick you are
+#      - Thanks for all the great help
+#      - I’m really grateful for your support
+#
+#  - intent: negative_feedback
+#    examples: |
+#      - No
+#      - This bot didn’t help me at all
+#      - You didn’t answer my question properly
+#      - I’m not satisfied with your responses
+#      - I’m not getting the help I need
+#      - This isn’t what I was looking for
+#      - You’ve made things more confusing
+#      - This chatbot isn’t helpful
+#      - I didn’t get the right answer
+#      - Your response wasn’t useful
+#      - I’m frustrated with this bot
+#      - I’m not happy with the service
+#      - The answer you gave didn’t solve my problem
+#      - This isn’t the solution I needed
+#      - You misunderstood my request
+#      - I’m really disappointed
+#      - This bot isn’t working as I expected
+#      - The answers are not accurate
+#      - I’m not getting the information I need
+#      - This is not what I wanted
+#      - You gave a vague response
+#      - This chatbot isn’t very efficient
+#      - Your answer was unclear
+#      - You didn’t address my concern properly
+#      - I didn’t get the help I was hoping for
+#      - Your response doesn’t make sense
+#      - I expected better from this bot
+#      - I didn’t find your response helpful
+#      - Your answer wasn’t relevant to my issue
+#      - This isn’t a good experience
+#      - I’m not impressed with this bot
+#      - You didn’t solve my problem at all
+#      - I’m not getting the support I need
+#      - I’m really frustrated with this bot
+#      - The answers are too slow
+#      - The response is inaccurate
+#      - This chatbot is too complicated
+#      - You didn’t understand my problem
+#      - This bot gave me the wrong information
+#      - Your answer was not specific enough
+#      - I’m not satisfied with your service
+#      - I didn’t get any real help
+#      - You didn’t help me at all
+#      - This bot is too slow
+#      - This chatbot didn’t meet my expectations
+#      - The answers were not helpful at all
+#      - This service needs improvement
+#      - You didn’t solve my issue
+#      - I don’t think this bot can help me
+#      - I’m disappointed with this chatbot
+#
+##  - intent: chatbot_challenge
+##    examples: |
+##      - Can you help me with something tricky?
+##      - I’ve got a tough question for you
+##      - Can you solve this problem for me?
+##      - I need you to figure this out
+##      - Let’s see if you can answer this
+##      - I have a challenging question for you
+##      - Can you handle this challenge?
+##      - This might be a difficult question for you
+##      - Can you give me a tough answer?
+##      - Let’s test your abilities
+##      - I have a complex question
+##      - This is a tricky one for you
+##      - I want to challenge you with this
+##      - Are you ready for a tough question?
+##      - This might stump you
+##      - Can you crack this challenge?
+##      - I have a difficult issue to solve
+##      - Can you handle a complex question?
+##      - Let’s see if you’re up for this
+##      - I bet you can’t answer this
+##      - Can you answer this tricky question?
+##      - I have a difficult problem for you
+##      - Are you ready to solve a challenge?
+##      - Let’s see how good you really are
+##      - This is going to be a tough one
+##      - I need you to solve this for me
+##      - Can you help me with this difficult task?
+##      - This is a real challenge for you
+##      - Let’s see if you can answer this
+##      - This might be a tough one for you
+##      - Can you handle something complicated?
+##      - I’m testing your abilities now
+##      - Can you solve this complex problem?
+##      - I want to see if you can crack this
+##      - Can you come up with an answer to this?
+##      - Let’s see if you’re good at solving problems
+##      - I’ve got a tricky situation for you
+##      - This is not going to be easy
+##      - Can you answer this difficult question?
+##      - I need a solution to this tough problem
+##      - Can you give me a detailed response?
+##      - This one might be tricky for you
+##      - I’m challenging you to solve this
+##      - Can you solve this issue for me?
+##      - I need help with something difficult
+#
+#  - intent: deny
+#    examples: |
+#      - No, I don’t need help with that
+#      - I’m not interested
+#      - I don’t think that’s necessary
+#      - I don’t want to do that
+#      - I’m not sure about that
+#      - I don’t want any suggestions
+#      - I’m good, thank you
+#      - No, that’s not what I’m looking for
+#      - I’m not in the mood for that
+#      - I don’t think that’s a good idea
+#      - I don’t need any help with that right now
+#      - No, I’m not ready for that
+#      - That’s not what I’m looking for
+#      - No, I don’t want to talk about it
+#      - I’m fine without it
+#      - No thanks
+#      - I’d rather not do that
+#      - I’m not interested in hearing that
+#      - I don’t need any advice
+#      - That’s not what I need at the moment
+#      - I don’t want any more information on that
+#      - No, I’m not going to participate
+#      - I don’t want to deal with that right now
+#      - I don’t think that’s helpful
+#      - No, I’ll handle it myself
+#      - I’m not sure if that’s a good idea
+#      - No, I don’t want to discuss it further
+#      - I’m not open to that suggestion
+#      - I’m not ready to think about that
+#      - I don’t want any further details
+#      - No, I’ll pass on that
+#      - I’m not ready to answer that
+#      - I don’t feel like doing that right now
+#      - No, that’s not something I want
+#      - I’m fine, thank you
+#      - I don’t want to continue with that
+#      - No, I’ll stick with my own decision
+#      - I’m not going to proceed with that
+#      - No, I’m not interested in your suggestion
+#      - I don’t need any more suggestions
+#      - No, I’m not ready for that yet
+#      - I’m going to decline that offer
+#      - I don’t think I want to pursue that
+#      - No, I’m good with what I have right now
+#      - I don’t want to follow that path right now
+#      - I’m not looking for that at the moment
+#      - I don’t think I’ll go along with that
+#      - I’m not interested, thanks
+#      - I’ll pass on that one
+#  - intent: harassment
+#    examples: |
+#      - Someone is harassing me
+#      - I’m being harassed
+#      - This person keeps bothering me
+#      - I’m not feeling safe because of someone
+#      - Someone won’t leave me alone
+#      - I’m getting threatening messages
+#      - I feel like I’m being stalked
+#      - Someone is making me feel uncomfortable
+#      - They won’t stop messaging me
+#      - I think I’m being followed
+#      - This person keeps calling me
+#      - I’m scared of what they might do
+#      - I want to report someone for harassment
+#      - Someone is constantly invading my privacy
+#      - I’m receiving unwanted attention
+#      - I don’t feel safe around this person
+#      - Someone is crossing my boundaries
+#      - I need help, someone is bothering me
+#      - I feel threatened by someone's behavior
+#
+#
+#  - intent: direct_communication
+#    examples: |
+#      - Can you speak directly to me?
+#      - Let’s have a one-on-one conversation
+#      - I prefer to talk directly
+#      - Let’s talk face to face
+#      - Can you address this directly to me?
+#      - I want to talk directly to you
+#      - Please speak with me directly
+#      - Let’s have a direct discussion
+#      - I want to communicate directly with you
+#      - Let’s communicate in person
+#      - I’d like to have a private conversation
+#      - I prefer not to go through anyone else
+#      - I want to address this directly
+#      - Let’s skip the intermediaries
+#      - Please speak directly to me about this
+#      - I want to handle this conversation one-on-one
+#      - Can we discuss this directly?
+#      - I want a direct response from you
+#      - I’d like to talk face-to-face about this
+#      - I want this conversation to be direct
+#      - Can you message me directly?
+#      - Let’s talk in private
+#      - I need to speak with you directly
+#      - I’d like a direct answer
+#      - Can you talk to me in person about this?
+#      - I don’t want to go through anyone else
+#      - Let’s have a personal conversation
+#      - I prefer to speak directly without interference
+#      - I want this communication to be private
+#      - Can you address me directly about this?
+#      - Let’s have a personal discussion
+#      - I want you to speak directly to me
+#      - Please don’t involve others
+#      - I prefer direct communication without mediation
+#      - Let’s avoid anyone else in this conversation
+#      - I don’t want to go through third parties
+#      - Can you directly share that information with me?
+#      - I want to have a private talk with you
+#      - Please communicate with me directly
+#      - Let’s talk privately, one-on-one
+#      - Can you give me a direct response?
+#
+#  - intent: nlu_fallback
+#    examples: |
+#      - I don't understand
+#      - Can you explain that again?
+#      - I didn't get that
+#      - What do you mean?
+#      - Could you repeat that?
+#      - I am not sure what you're asking
+#      - I'm lost
+#      - What do you want me to do?
+#      - I don't know how to respond to that
+#      - That doesn't make sense
+#      - Could you clarify?
+#      - Can you help me with something else?
+#      - I didn't quite follow you
+#      - Sorry, I didn't understand
+#      - Can you say that again in another way?
+#      - I'm confused
+#      - I don't think I understand that question
+#      - What are you asking about?
+#      - That's unclear to me
+#      - I need more information
+#      - Can you explain it differently?
+#      - I'm not sure what you mean
+#      - Can you simplify it for me?
+#      - I didn't catch that
+#      - Could you be more specific?
+#      - What are you referring to?
+#      - I didn’t quite get that
+#      - Could you give me more details?
+#      - I don't think I understand what you're asking
+#      - I’m not sure what you’re talking about
+#      - I need more clarification
+#      - That’s a bit unclear for me
+#      - Can you rephrase that?
+#      - I don’t know how to respond to this
+#      - I’m confused about your question
+#      - Can you explain that again in simpler terms?
+#      - What do you mean by that?
+#      - Could you be more clear?
+#      - I don’t understand the question
+#      - What’s the question exactly?
+#      - I’m not sure I’m following you
+#      - Can you help me understand that?
+#      - I don’t understand your request
+#      - Can you break it down for me?
+#      - Could you elaborate a bit more?
+#      - What’s the issue exactly?
+#      - Could you tell me more about that?
+#      - I need more info to help you with that
+#      - I don’t know how to answer that
+#      - Could you ask that in a different way?
+#      - I’m unsure about what you’re asking
+#
+#
+#  - intent: inform_hostel
+#    examples: |
+#      - kp
+#      - qc
+#      - QC
+#      - KP
+#      - I stay in QC
+#      - I stay in KP
+#      - I live in QC
+#      - I live in KP
+#      - I’m from QC
+#      - I’m from KP
+#      - My hostel is QC
+#      - My hostel is KP
+#      - qc hostel
+#      - kp hostel
+#      - Girls hostel QC
+#      - Boys hostel KP
+#      - Queen Castle
+#      - King Palace
+#      - I live in Queen Castle
+#      - I live in King Palace
+#      - I stay in Queen Castle
+#      - I stay in King Palace
+#      - My hostel is Queen Castle
+#      - My hostel is King Palace
+#      - I’m staying in Queen Castle
+#      - I’m staying in King Palace
+#      - QC hostel block
+#      - KP hostel block
+#      - I'm in the KP hostel
+#      - I'm in the QC hostel
+#      - I'm living in Queen Castle hostel
+#      - I'm living in King Palace hostel
+#      - I'm from the boys hostel, KP
+#      - I'm from the girls hostel, QC
+#      - Queen Castle girls hostel
+#      - King Palace boys hostel
+#      - I reside in QC
+#      - I reside in KP
+#      - QC is my hostel
+#      - KP is my hostel
+#      - Currently in KP hostel
+#      - Currently in QC hostel
+#      - I'm currently staying in Queen Castle
+#      - I'm currently staying in King Palace
+#      - I'm a KP resident
+#      - I'm a QC resident
+#      - My accommodation is in QC
+#      - My accommodation is in KP
+#      - Hostel name is QC
+#      - Hostel name is KP
+#      - It’s Queen Castle
+#      - It’s King Palace
+#      - QC girls hostel
+#      - KP boys hostel
+#
+#  - intent: inform_hostel_number
+#    examples: |
+#      - 001
+#      - 002
+#      - 003
+#      - 004
+#      - 005
+#      - hostel number 001
+#      - hostel number 002
+#      - hostel number 003
+#      - hostel number 004
+#      - hostel number 005
+#      - hostel number 006
+#      - my hostel number is 002
+#      - my hostel number is 005
+#      - my hostel is 003
+#      - my hostel is 004
+#      - I stay in hostel number 001
+#      - I stay in hostel number 004
+#      - I’m in hostel 002
+#      - I’m in hostel 006
+#      - It's hostel 003
+#      - It's hostel 007
+#      - I live in hostel 001
+#      - I live in hostel 002
+#      - I live in hostel 005
+#      - hostel 001
+#      - hostel 002
+#      - hostel 003
+#      - hostel 004
+#      - hostel 005
+#      - number 002
+#      - number 004
+#      - hostel is 003
+#      - my hostel block number is 002
+#      - I am in hostel no 005
+#      - I am from hostel no 003
+#      - I am residing in hostel 004
+#      - hostel number is 001
+#      - hostel number is 006
+#      - I'm from hostel 002
+#      - I belong to hostel 003
+#      - It’s number 001
+#      - It’s number 004
+#      - Hostel is number 005
+#
+#  - intent: inform_floor
+#    examples: |
+#      - 0
+#      - 1
+#      - 2
+#      - 3
+#      - 4
+#      - ground
+#      - ground floor
+#      - first floor
+#      - second floor
+#      - third floor
+#      - fourth floor
+#      - I am on floor 0
+#      - I am on floor 1
+#      - I am on floor 2
+#      - I am on floor 3
+#      - I am on floor 4
+#      - My floor is 1
+#      - My floor is 2
+#      - My floor is 3
+#      - My floor is 4
+#      - I live on the ground floor
+#      - I live on the first floor
+#      - I live on the second floor
+#      - I live on the third floor
+#      - I stay on floor 1
+#      - I stay on floor 2
+#      - I stay on floor 3
+#      - I stay on floor 4
+#      - It's the ground floor
+#      - It's the first floor
+#      - It's the second floor
+#      - It's the third floor
+#      - It's the fourth floor
+#      - Floor 0
+#      - Floor 1
+#      - Floor 2
+#      - Floor 3
+#      - Floor 4
+#      - I'm staying on the ground floor
+#      - I'm staying on the first floor
+#      - I'm staying on the second floor
+#      - I'm staying on the third floor
+#      - I'm staying on the fourth floor
+#      - I live at level 0
+#      - I live at level 1
+#      - I live at level 2
+#      - I live at level 3
+#      - I live at level 4
+#      - Currently on floor 1
+#      - Currently on floor 2
+#      - Currently on floor 3
+#
+#
+#
+#
+#  - intent: inform_block
+#    examples: |
+#      - A
+#      - B
+#      - C
+#      - D
+#      - block A
+#      - block B
+#      - block C
+#      - block D
+#      - in block A
+#      - in block B
+#      - in block C
+#      - in block D
+#      - I stay in block A
+#      - I stay in block B
+#      - I stay in block C
+#      - I stay in block D
+#      - I am in block A
+#      - I am in block B
+#      - I am in block C
+#      - I am in block D
+#      - I live in block A
+#      - I live in block B
+#      - I live in block C
+#      - I live in block D
+#      - My block is A
+#      - My block is B
+#      - My block is C
+#      - My block is D
+#      - Block A please
+#      - It's block B
+#      - It's block C
+#      - It's block D
+#      - I’m staying in A block
+#      - I’m staying in B block
+#      - I’m staying in C block
+#      - I’m staying in D block
+#      - Letter A block
+#      - Letter B block
+#      - Letter C block
+#      - Letter D block
+#      - A block
+#      - B block
+#      - C block
+#      - D block
+#      - Currently in block A
+#      - Currently in block B
+#      - Currently in block C
+#      - Currently in block D
+#
+#  - intent: inform_room_number
+#    examples: |
+#      - 15
+#      - 01
+#      - 02
+#      - 03
+#      - 04
+#      - 23
+#      - 08
+#      - 42
+#      - 12
+#      - 09
+#      - 27
+#      - 34
+#      - my room is 12
+#      - my room number is 23
+#      - room 08
+#      - room number 42
+#      - I stay in room 15
+#      - it's 06
+#      - it's 19
+#      - 17
+#      - 22
+#      - 30
+#      - I live in room 09
+#      - I’m in room 02
+#      - It’s room number 05
+#      - I’m in room number 03
+#      - I reside in room 14
+#      - Room number 32
+#      - Room number is 11
+#      - Room number is 06
+#      - I am in room 16
+#      - I stay in room 28
+#      - It’s 07
+#      - My room: 24
+#      - 26 is my room number
+#      - Room: 20
+#      - Room 04
+#      - My room's 10
+#      - Number 31
+#      - 13
+#      - Room is 35
+#      - Room no 18
+#      - Number 21
+#      - 29
+#      - It is 33
+#      - Living in room 36
+#      - Residing in room 37
+#      - Staying in room 38
+#      - Room no. 39
+#      - I live in room forty
+#
+##
+##  - intent: out_of_scope
+##    examples: |
+##      - I want pizza
+##      - What's the time?
+##      - Tell me a joke
+##      - Random question
+##      - Who is the president?
+##      - How’s the weather?
+##      - I’m hungry
+##      - Play music
+##      - Show me a meme
+##      - Can you call my mom?
+##      - What is the capital of France?
+##      - Solve 2 + 2
+##      - How tall is Mount Everest?
+##      - Do aliens exist?
+##      - Where is my phone?
+##      - What's trending today?
+##      - Open Instagram
+##      - Make me laugh
+##      - What is love?
+##      - Sing a song
+##      - Who won the match?
+##      - I like cats
+##      - Show me a movie
+##      - Can you dance?
+##      - Launch YouTube
+##      - Tell me a story
+##      - Draw a picture
+##      - Buy me something
+##      - Set an alarm
+##      - Tell me a secret
+##      - What do you do?
+##      - Can you cook?
+##      - Translate hello to Spanish
+##      - What’s 5 times 6?
+##      - What’s your favorite color?
+##      - What’s the meaning of life?
+##      - Will it rain today?
+##      - Give me a poem
+##      - Recommend a book
+##      - Are you real?
+##      - Count to ten
+##      - Do you like pizza?
+##      - Who made you?
+##      - What is AI?
+##      - Open the door
+##      - Sing happy birthday
+##      - What is Python?
+#
+#  - intent: negative
+#    examples: |
+#      - no
+#      - na
+#
+#
+#  - intent: positive
+#    examples: |
+#      - yes
+#      - yo
+#
+#
+#
+#  - intent: inform_name
+#    examples: |
+#      - My name is Rama
+#      - I am Ankit
+#      - Call me Sneha
+#      - It's Rahul
+#      - You can call me Priya
+#      - This is Aarav
+#      - Hi, I'm Neha
+#      - I'm Aditya
+#      - The name's Meera
+#      - Rohan here
+#      - Just Tanya
+#      - Hey, I'm Karan
+#      - It's Sima speaking
+#      - I'm known as Divya
+#      - People call me Arjun
+#      - rama
+#      - raja Kumar
+#      - raju
+#      - Rahul gosh
+#      - Soumitra Maite
+#
+#  - intent: affirm
+#    examples: |
+#      - hmm
+#      - nothing
+#      - hhgfjyt
+#      - hahahaha
+#      - wahahaha
+#      - sure
+#      - that’s right
+#      - correct
+#      - okay
+#      - ok
+#      - sure thing
+#      - why not
+#      - I agree
+#      - exactly

@@ -1,0 +1,105 @@
+#version: "3.1"
+#
+#rules:
+#
+#  - rule: Handle fallback
+#    steps:
+#      - intent: nlu_fallback
+#      - action: utter_default
+
+version: "3.1"
+
+rules:
+- rule: Send complaint form link
+  steps:
+  - intent: want_complaint_form
+  - action: action_send_form_link
+
+- rule: User describes issue
+  steps:
+    - intent: describe_issue
+    - action: action_acknowledge_issue
+
+- rule: User confirms issue
+  steps:
+    - intent: confirm_issue
+    - action: utter_ask_issue
+
+- rule: User denies issue
+  steps:
+    - intent: deny
+    - action: utter_good_day
+
+- rule: out of scope
+  steps:
+    - intent: out_of_scope
+    - action: utter_out_of_scope
+
+- rule: Handle romantic talk
+  steps:
+    - intent: romantic_talk
+    - action: utter_avoid_romantic
+
+
+- rule: harassment
+  steps:
+    - intent: harassment
+    - action: utter_harassment
+
+- rule: thankyou
+  steps:
+    - intent: thank_you
+    - action: utter_thank_you
+
+- rule: Extract user name
+  steps:
+    - intent: provide_name
+    - action: action_extract_name
+
+- rule: Greet user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: fallback when user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+
+- rule: Handle fallback
+  steps:
+      - intent: nlu_fallback
+      - action: utter_default
+
+
+#  - rule: Confirm user location
+#    steps:
+#      - slot_was_set:
+#          - room_number: true
+#          - block: true
+#          - floor: true
+#          - hostel_number: true
+#          - hostel: true
+#
+#  - rule: Handle fallback
+#    steps:
+#      - intent: out_of_scope
+#      - action: action_reply_after_name
+#
+#
+#  - rule: Clarify when user denies the intent
+#    steps:
+#      - intent: deny
+#      - action: utter_clarify_issue
+#
+#  - rule: sexual harassment
+#    steps:
+#      - intent: harassment
+#      - action: utter_harassment
+#
+#  - rule: direct communication hostel related issues
+#    steps:
+#     - intent: direct_communication
+#     - action: utter_direct_communication
+#

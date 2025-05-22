@@ -1,0 +1,354 @@
+version: "3.1"
+stories:
+- story: not feeling well
+  steps:
+    - intent: health_problem
+    - action: action_health_problem
+
+- story: user gives positive feedback
+  steps:
+    - intent: positive_feedback
+    - action: utter_positive_feedback
+
+- story: user gives negative feedback
+  steps:
+  - intent: negative_feedback
+  - action: utter_negative_feedback
+
+- story: roommate
+  steps:
+    - intent: roommate_issue
+    - action: utter_roommate_solution
+
+
+- story: complain_to_ceo
+  steps:
+    - intent: complain_ceo
+    - action: utter_email_ceo
+
+- story: complain_to_registrar
+  steps:
+    - intent: complain_registrar
+    - action: utter_email_registrar
+
+- story: complain_to_director
+  steps:
+    - intent: complain_director
+    - action: utter_email_director
+
+
+
+- story: User apologizes
+  steps:
+    - intent: sorry
+    - action: utter_sorry
+
+- story: basic flow
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: provide_location
+    - action: action_extract_location
+    - intent: provide_name
+    - action: action_extract_name
+    - intent: sorry
+    - action: utter_sorry
+
+- story: chatbot helps with hostel complaint
+  steps:
+      - intent: deny
+      - action: utter_good_day
+
+      - intent: greet
+      - action: utter_greet
+
+      - intent: provide_location
+      - action: action_extract_location
+
+      - intent: provide_name
+      - action: action_extract_name
+- story: utter issue
+  steps:
+      - intent: confirm_issue
+      - action: utter_ask_issue
+
+      - intent: describe_issue
+      - action: action_acknowledge_issue
+
+      - intent: want_complaint_form
+      - action: action_send_form_link
+
+      - intent: thank_you
+      - action: utter_thank_you
+
+      - intent: goodbye
+      - action: utter_goodbye
+
+
+
+
+#
+#  - story: suppose user1's reply
+#    steps:
+#      - intent: greet
+#      - action: utter_greet
+#      - intent: inform_issue
+#      - action: utter_ask_issue_type
+#      - intent: report_water_issue
+#      - action: utter_water
+#      - intent: goodbye
+#      - action: utter_goodbye
+#
+#  - story: suppose user2's  reply y
+#    steps:
+#      - intent: greet
+#      - action: utter_greet
+#      - intent: inform_name
+#      - action: action_reply_after_name
+#      - intent: positive
+#      - action: utter_ask_issue_type
+#      - intent: report_electricity_issue
+#      - action: utter_electricity
+#      - intent: goodbye
+#      - action: utter_goodbye
+#
+#  - story: suppose user2's reply n
+#    steps:
+#      - intent: greet
+#      - action: utter_greet
+#      - intent: inform_name
+#      - action: action_reply_after_name
+#      - intent: negative
+#      - intent: goodbye
+#      - action: utter_goodbye
+#
+#  - story: affirm reply by the user3 say y
+#    steps:
+#      - intent: greet
+#      - action: utter_greet
+#      - intent: affirm
+#      - action: action_ask_hostel_type
+#      - intent: inform_hostel
+#      - action: action_ask_hostel_number
+#      - intent: inform_hostel_number
+#      - action: action_ask_floor
+#      - intent: inform_floor
+#      - action: action_ask_block
+#      - intent: inform_block
+#      - action: action_ask_room_number
+#      - intent: inform_room_number
+#      - action: action_confirm_full_location
+#      - intent: inform_name
+#      - action: action_reply_after_name
+#      - intent: positive
+#      - action: utter_ask_issue_type
+#      - intent: report_electricity_issue
+#      - action: utter_electricity
+#      - intent: goodbye
+#      - action: utter_goodbye
+#
+#  - story: affirm reply by the user3 say n
+#    steps:
+#      - intent: greet
+#      - action: utter_greet
+#      - intent: affirm
+#      - action: action_ask_hostel_type
+#      - intent: inform_hostel
+#      - action: action_ask_hostel_number
+#      - intent: inform_hostel_number
+#      - action: action_ask_floor
+#      - intent: inform_floor
+#      - action: action_ask_block
+#      - intent: inform_block
+#      - action: action_ask_room_number
+#      - intent: inform_room_number
+#      - action: action_confirm_full_location
+#      - intent: inform_name
+#      - action: action_reply_after_name
+#      - intent: negative
+#      - action: utter_thank_you
+#      - intent: goodbye
+#      - action: utter_goodbye
+#
+#  - story: Greet Story
+#    steps:
+#      - intent: greet
+#      - action: utter_greet
+##
+#  - story: Say goodbye
+#    steps:
+#      - intent: goodbye
+#      - action: utter_goodbye
+##
+#  - story: Greet and report an issue
+#    steps:
+#      - intent: greet
+#      - action: utter_greet
+#      - intent: inform_issue
+#      - action: utter_ask_issue_type
+#
+#  - story: say thankyou and ask feedback
+#    steps:
+#      - intent: thank_you
+#      - action: utter_thank_you
+#
+#  - story: feedback is positive
+#    steps:
+#      - intent: positive_feedback
+#      - action: utter_for_positive_feedback
+#
+#  - story: feedback is negative
+#    steps:
+#      - intent: negative_feedback
+#      - action: utter_for_negative_feedback
+#
+#  - story: Report water issue
+#    steps:
+#      - intent: report_water_issue
+#      - action: utter_water
+#      - intent: thank_you
+#      - action: utter_thank_you
+#
+#  - story: Report electricity issue
+#    steps:
+#      - intent: report_electricity_issue
+#      - action: utter_electricity
+#      - intent: thank_you
+#      - action: utter_thank_you
+##
+#  - story: Report maintenance issue
+#    steps:
+#      - intent: report_maintenance_issue
+#        entities:
+#          - item: fan
+#      - action: utter_maintenance
+#      - intent: thank_you
+#      - action: utter_thank_you
+#
+#  - story: Report cleanliness issue
+#    steps:
+#      - intent: report_cleanliness_issue
+#      - action: utter_cleanliness
+#      - intent: thank_you
+#      - action: utter_thank_you
+##
+#  - story: Report food issue
+#    steps:
+#      - intent: report_food_issue
+#      - action: utter_food
+#      - intent: thank_you
+#      - action: utter_thank_you
+#
+#  - story: Report noise issue
+#    steps:
+#      - intent: report_noise_issue
+#      - action: utter_noise
+#      - intent: thank_you
+#      - action: utter_thank_you
+#
+#
+#  - story: Report wifi issue
+#    steps:
+#      - intent: report_wifi_issue
+#      - action: utter_wifi
+#      - intent: thank_you
+#      - action: utter_thank_you
+#
+#  - story: Report temperature issue
+#    steps:
+#      - intent: report_temp_issue
+#      - action: utter_temperature
+#      - intent: thank_you
+#      - action: utter_thank_you
+##
+#  - story: report_security_issue
+#    steps:
+#      - intent: report_security_issue
+#      - action: utter_security
+#      - intent: thank_you
+#      - action: utter_thank_you
+#
+#
+#  - story: Report roommate issue
+#    steps:
+#      - intent: report_roommate_issue
+#      - action: utter_roommate
+#      - intent: thank_you
+#      - action: utter_thank_you
+#
+#  - story: Report relationship issue
+#    steps:
+#      - intent: report_relationship_issue
+#      - action: utter_relationship
+#      - intent: thank_you
+#      - action: utter_thank_you
+#
+#
+#  - story: Harassment Report
+#    steps:
+#      - intent: harassment
+#      - action: utter_harassment
+#      - intent: thank_you
+#      - action: utter_thank_you
+#
+#
+#  - story: Deny Interaction
+#    steps:
+#      - intent: deny
+#      - action: utter_clarify_issue
+#      - intent: thank_you
+#      - action: utter_thank_you
+#
+#
+#  - story: Direct Communication
+#    steps:
+#      - intent: direct_communication
+#      - action: utter_direct_communication
+#      - intent: thank_you
+#      - action: utter_thank_you
+#
+#////////////////////////////////////////////////////////////////////////////////////////////////// above hai:-
+#  - story: Gather Full Hostel Details
+#    steps:
+#      - intent: inform_hostel
+#        entities:
+#          - hostel: QC
+#      - action: action_ask_hostel_number
+#
+#      - intent: inform_hostel_number
+#        entities:
+#          - hostel_number: "3"
+#      - action: action_ask_floor
+#
+#      - intent: inform_floor
+#        entities:
+#          - floor: "1"
+#      - action: action_ask_block
+#
+#      - intent: inform_block
+#        entities:
+#          - block: B
+#      - action: action_ask_room_number
+#
+#      - intent: inform_room_number
+#        entities:
+#          - room_number: "15"
+#      - action: action_confirm_full_location
+
+
+
+#
+#  - story: Provide Full Hostel Details
+#    steps:
+#      - intent: inform_hostel
+#      - action: action_ask_hostel_number
+#      - intent: inform_hostel_number
+#      - action: action_ask_floor
+#      - intent: inform_floor
+#      - action: action_ask_block
+#      - intent: inform_block
+#      - action: action_ask_room_number
+#      - intent: inform_room_number
+#      - action: action_confirm_full_location
+#
+#
